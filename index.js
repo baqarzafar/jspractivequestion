@@ -1,18 +1,9 @@
-function foo(n){
-
-
-    if(n<=0){
-
-      return 0 ;
-
-     }
-     else{
-       
-
-        return  n * foo(n-1)
-     }
-  
-
+function foo(n) {
+    if (n <= 1) {
+        return 1;  // Base case: factorial(1) = 1
+    } else {
+        return n * foo(n - 1);  // Recursive call
+    }
 }
 
-console.log(f00(20))
+console.log(foo(5)); // Output: 120
